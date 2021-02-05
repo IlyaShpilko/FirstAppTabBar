@@ -1,43 +1,46 @@
 //
-//  SecondViewController.swift
+//  SecondStoryboardViewController.swift
 //  FirstAppTabBar
 //
-//  Created by Shpilko Ilya on 2/2/21.
+//  Created by Shpilko Ilya on 2/4/21.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondStoryboardViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
-        print("loadView")
+        print("Second View Controller - loadView")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
-        print("viewDidLoad")
+        print("Second View Controller - viewDidLoad")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("viewWillAppear")
+        print("Second View Controller - viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("viewDidAppear")
+        print("Second View Controller - viewDidAppear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        print("viewWillDisappear")
+        print("Second View Controller - viewWillDisappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        print("viewDidDisappear")
+        print("Second View Controller - viewDidDisappear")
     }
-
+    
+    @IBAction func backButtonAction(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }

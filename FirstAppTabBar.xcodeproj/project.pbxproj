@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A590954025CC4D990046615B /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590953F25CC4D990046615B /* TitleViewController.swift */; };
+		A590954625CC4DC60046615B /* FirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A590954525CC4DC60046615B /* FirstStoryboard.storyboard */; };
+		A590954A25CC4E110046615B /* SecondStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A590954925CC4E110046615B /* SecondStoryboard.storyboard */; };
+		A590954D25CC4E210046615B /* SecondStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590954C25CC4E210046615B /* SecondStoryboardViewController.swift */; };
+		A590955725CC518A0046615B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590955625CC518A0046615B /* FirstViewController.swift */; };
 		A591843125C9574E00B79063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591843025C9574E00B79063 /* AppDelegate.swift */; };
 		A591843325C9574E00B79063 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591843225C9574E00B79063 /* SceneDelegate.swift */; };
 		A591843525C9574E00B79063 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A591843425C9574E00B79063 /* ViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A590953F25CC4D990046615B /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		A590954525CC4DC60046615B /* FirstStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstStoryboard.storyboard; sourceTree = "<group>"; };
+		A590954925CC4E110046615B /* SecondStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondStoryboard.storyboard; sourceTree = "<group>"; };
+		A590954C25CC4E210046615B /* SecondStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondStoryboardViewController.swift; sourceTree = "<group>"; };
+		A590955625CC518A0046615B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A591842D25C9574E00B79063 /* FirstAppTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstAppTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A591843025C9574E00B79063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A591843225C9574E00B79063 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +49,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A590955225CC50600046615B /* FirstAppScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A590954525CC4DC60046615B /* FirstStoryboard.storyboard */,
+				A590955625CC518A0046615B /* FirstViewController.swift */,
+			);
+			path = FirstAppScreen;
+			sourceTree = "<group>";
+		};
+		A590955925CC528B0046615B /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A590954925CC4E110046615B /* SecondStoryboard.storyboard */,
+				A590954C25CC4E210046615B /* SecondStoryboardViewController.swift */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
 		A591842425C9574E00B79063 = {
 			isa = PBXGroup;
 			children = (
@@ -79,19 +107,22 @@
 		A591844A25C9580000B79063 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A591844C25C9580B00B79063 /* TabBar */,
+				A591844C25C9580B00B79063 /* TabBarScreen */,
+				A590955225CC50600046615B /* FirstAppScreen */,
+				A590955925CC528B0046615B /* SecondScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		A591844C25C9580B00B79063 /* TabBar */ = {
+		A591844C25C9580B00B79063 /* TabBarScreen */ = {
 			isa = PBXGroup;
 			children = (
 				A591843625C9574E00B79063 /* Main.storyboard */,
 				A591843425C9574E00B79063 /* ViewController.swift */,
 				A591844525C9578900B79063 /* SecondViewController.swift */,
+				A590953F25CC4D990046615B /* TitleViewController.swift */,
 			);
-			path = TabBar;
+			path = TabBarScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +184,8 @@
 			files = (
 				A591843D25C9575000B79063 /* LaunchScreen.storyboard in Resources */,
 				A591843A25C9575000B79063 /* Assets.xcassets in Resources */,
+				A590954A25CC4E110046615B /* SecondStoryboard.storyboard in Resources */,
+				A590954625CC4DC60046615B /* FirstStoryboard.storyboard in Resources */,
 				A591843825C9574E00B79063 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,8 +199,11 @@
 			files = (
 				A591844625C9578900B79063 /* SecondViewController.swift in Sources */,
 				A591843525C9574E00B79063 /* ViewController.swift in Sources */,
+				A590954D25CC4E210046615B /* SecondStoryboardViewController.swift in Sources */,
 				A591843125C9574E00B79063 /* AppDelegate.swift in Sources */,
 				A591843325C9574E00B79063 /* SceneDelegate.swift in Sources */,
+				A590954025CC4D990046615B /* TitleViewController.swift in Sources */,
+				A590955725CC518A0046615B /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
